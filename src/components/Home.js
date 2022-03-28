@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
-import Section from "./Section";
 import styled from "styled-components";
+import Section from "./Section";
 function Home() {
   return (
     <Container>
@@ -34,23 +34,30 @@ function Home() {
         rightBtnText="EXISITING INVENTORY"
       />
       <Section
+        title="Model S"
+        description="Order Online For Touches Delivery"
+        backgroundImg="model-s.jpg"
+        leftBtnText="CUSTOM ORDER"
+        rightBtnText="EXISITING INVENTORY"
+      />
+      <Section
         title="Little Cost Solar Panels In America"
         description="Money-back guarantee"
         backgroundImg="solar-panel.jpg"
-        leftBtnText="CUSTOM ORDER"
-        rightBtnText="EXISITING INVENTORY"
+        leftBtnText="Order now"
+        rightBtnText="LEARN MORE"
       />
       <Section
         title="Solar for New Roofs"
         description="Solar Roof Cost Less Than A New Roof"
         backgroundImg="solar-roof.jpg"
-        rightBtnText="Custom Order"
-        leftBtnText="EXISITING INVENTORY"
+        leftBtnText="Order now"
+        rightBtnText="LEARN MORE"
       />
       <Section
         title="Accessories"
-        backgroundImg="new-interior.jpg"
-        rightBtnText="Shop now"
+        backgroundImg="accessories.jpg"
+        leftBtnText="SHOP NOW"
       />
     </Container>
   );

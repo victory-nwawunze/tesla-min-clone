@@ -1,14 +1,15 @@
 *{
   padding: 0;
-  box-sizing: border-box;
-  color: #343c41;
   margin: 0;
-  font-family: 'Rubik', 'sans-serif';
+  box-sizing: border-box;
+  font-family: 'Rubic', 'sans-serif';
+  color: #343c41;
 }
+
 a{
   text-decoration: none;
 }
 body{
-  width: 100%;
   overflow-x: hidden;
+  width: 100%;
 }
