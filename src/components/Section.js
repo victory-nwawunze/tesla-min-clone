@@ -1,6 +1,9 @@
 /** @format */
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Bounce from "react-reveal/Bounce";
 function Section({
   title,
   description,
@@ -11,14 +14,23 @@ function Section({
   return (
     <Wrap bgImage={backgroundImg}>
       <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
+        <Fade left>
+          <h1>{title}</h1>
+        </Fade>
+        <Fade right>
+          <p>{description}</p>
+        </Fade>
       </ItemText>
       <Buttons>
         <ButtonGroup>
-          <RightButton>{rightBtnText}</RightButton>
-          <LeftButton>{leftBtnText}</LeftButton>
+          <Zoom bottom>
+            <RightButton>{rightBtnText}</RightButton>
+          </Zoom>
+          <Zoom top>
+            {leftBtnText && <LeftButton>{leftBtnText}</LeftButton>}
+          </Zoom>
         </ButtonGroup>
+        {/* <DownArrow src="/images/down-arrow.svg" /> */}
       </Buttons>
     </Wrap>
   );
@@ -53,6 +65,17 @@ const ButtonGroup = styled.div`
   }
 `;
 const RightButton = styled.div`
+  background-color: white;
+  width: 246px;
+  height: 40px;
+  opacity: 0.65;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+`;
+const LeftButton = styled.div`
   background-color: rgba(24, 26, 48, 0.8);
   width: 246px;
   height: 40px;
@@ -63,5 +86,9 @@ const RightButton = styled.div`
   align-items: center;
   border-radius: 100px;
 `;
-const LeftButton = styled.div``;
 const Buttons = styled.div``;
+// const DownArrow = styled.div`
+//   height: 40px;
+//   animation: animateDown infinite 1.5s;
+//   overflow-x: hidden;
+// `;
