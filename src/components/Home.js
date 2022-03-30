@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
-import styled from "styled-components";
 import Section from "./Section";
+import styled from "styled-components";
 function Home() {
   return (
     <Container>
@@ -36,28 +36,27 @@ function Home() {
       <Section
         title="Little Cost Solar Panels In America"
         description="Money-back guarantee"
-        backgroundImg="solar-roof.jpg"
+        backgroundImg="solar-panel.jpg"
         rightBtnText="ORDER NOW"
         leftBtnText="LEARN MORE"
       />
       <Section
         title="Solar for New Roofs"
         description="Solar Roof Cost Less Than A New Roof"
-        backgroundImg="solar-panel.jpg"
+        backgroundImg="solar-roof.jpg"
         rightBtnText="ORDER NOW"
         leftBtnText="LEARN MORE"
       />
       <Section
         title="Accessories"
         backgroundImg="accessories.jpg"
-        rightBtnText="ORDER NOW"
+        rightBtnText="Shop now"
       />
     </Container>
   );
 }
 
 export default Home;
-
 const Container = styled.div`
   height: 100vh;
   z-index: 10;
