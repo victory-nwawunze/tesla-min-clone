@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-import Bounce from "react-reveal/Bounce";
+
 function Section({
   title,
   description,
@@ -30,7 +30,6 @@ function Section({
             {leftBtnText && <LeftButton>{leftBtnText}</LeftButton>}
           </Zoom>
         </ButtonGroup>
-        {/* <DownArrow src="/images/down-arrow.svg" /> */}
       </Buttons>
     </Wrap>
   );
@@ -87,8 +86,3 @@ const LeftButton = styled.div`
   border-radius: 100px;
 `;
 const Buttons = styled.div``;
-// const DownArrow = styled.div`
-//   height: 40px;
-//   animation: animateDown infinite 1.5s;
-//   overflow-x: hidden;
-// `;
